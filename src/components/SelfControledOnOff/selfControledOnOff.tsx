@@ -3,11 +3,12 @@ import styles from './selfControledOnOff.module.css'
 
 type OnOffPropsType = {
     onChange: (on: boolean) => void
+    defaultOn?: boolean
 }
 
 function SelfControledOnOff(props:OnOffPropsType) {
 
- let [on, setOn] = useState(false)
+ let [on, setOn] = useState(props.defaultOn ? props.defaultOn : false)
 
     const onClicked = () => {
      setOn(true)

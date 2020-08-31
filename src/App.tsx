@@ -23,8 +23,8 @@ function App() {
             {/*<Accordion title={'Menu'} setCollapsed={() => {setCollapsed(!collapsed)}} collapsed={collapsed}/>*/}
             {/*<Rating setRatingvalue={setRatingvalue} value={ratingValue}/>*/}
             {/*<SelfControledRating/>*/}
-            <SelfControledOnOff onChange={setOn}/>{on.toString()}
-            {/*<ControledOnOff on={on} onChange={setOn}/>*/}
+            {/*<SelfControledOnOff onChange={setOn}/>{on.toString()}*/}
+            <ControledOnOff on={on} onChange={setOn}/>
         </div>
     );
 }
